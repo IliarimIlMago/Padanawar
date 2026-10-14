@@ -1,5 +1,7 @@
 import Regions from "../Database/Regions.json" with { type: "json" };
 
+let regions = Regions;
+
 function create_regions(n_regions = 10) {
 
     for (let i = 0; i < n_regions; i++) {
@@ -10,4 +12,4 @@ function create_regions(n_regions = 10) {
     console.log(Regions);
 }
 
-create_regions();
+export {create_regions, regions };
